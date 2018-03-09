@@ -6,6 +6,7 @@ class Application
     req = Rack::Request.new 
     
     if req.path.match(/items/)
-      @@items.each do
+      @@items.each do |item|
+        resp.write
   end 
 end 
