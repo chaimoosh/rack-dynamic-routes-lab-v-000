@@ -7,7 +7,7 @@ class Application
     req = Rack::Request.new 
     
     if req.path.match(/items/)
-      price = req.path.split("/items/")
+      price = req.path.split("/items/").last
       
     else
       resp.write"route not found"
