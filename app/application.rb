@@ -8,6 +8,8 @@ class Application
     if req.path.match(/items/)
       @@items.each do |item|
         resp.write"#{item}"
-      else
+      end 
+    else
+      resp.
   end 
 end 
