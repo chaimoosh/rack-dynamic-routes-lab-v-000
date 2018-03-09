@@ -10,6 +10,7 @@ class Application
         resp.write"#{item}"
       end 
     else
-      resp.
+      resp.write"route not found"
+      resp.status
   end 
 end 
