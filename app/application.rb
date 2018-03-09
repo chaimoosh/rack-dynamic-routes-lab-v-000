@@ -7,8 +7,8 @@ class Application
     req = Rack::Request.new 
     
     if req.path.match(/items/)
-      price = req.path.split("/items/").last
-      item = @@items.find{|s| s.name == song_title}
+      item_name = req.path.split("/items/").last
+      item = @@items.find{|s| s.name == item_name}
     else
       resp.write"route not found"
       resp.status = 404
